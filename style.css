@@ -1,0 +1,100 @@
+body{
+    background-color: #dfe639;
+    -webkit-transform: perspective(1500px);
+    -webkit-transform-style: preserve-3d;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.card-one{
+    text-align: center;
+    position: absolute;
+    left: 100px;
+    width: 250px;
+    height: 500px;
+    margin: 10px 0;
+    background: linear-gradient(to top right, #ff0000 0%, #ffcc99 100%);
+    transition: 1s;
+    transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.card-one:hover,
+.card-two:hover,
+.card-three:hover{
+    transform: rotateX(0deg);
+    transform: rotateZ(0deg);
+    transition: .6s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-one img,
+.card-two img,
+.card-three img{
+    transform: translateY(15px);
+    width: 100px;
+    height: 200px;
+}
+
+.card-one img:hover,
+.card-two img:hover,
+.card-three img:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+h3{
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0 0 2px #fff;
+    transform: translateY(10px);
+}
+
+.bounty{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+    width: 220px;
+    transform: translateX(12px);
+}
+
+.card-two{
+    text-align: center;
+    position: absolute;
+    left: 500px;
+    width: 250px;
+    height: 500px;
+    margin: 10px 0;
+    background: linear-gradient(to top right, #009900 0%, #fffccc 100%);
+    transition: 1s;
+    transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.card-three{
+    text-align: center;
+    position: absolute;
+    left: 900px;
+    width: 250px;
+    height: 500px;
+    margin: 10px 0;
+    background: linear-gradient(to top right, #333300 0%, #ffcc00 100%);
+    transition: 1s;
+    transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+
